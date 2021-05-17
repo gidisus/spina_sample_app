@@ -171,7 +171,6 @@ defaults:
 # Environment options will override the default options above.
 #
 environments:
-
+  
   spina_local:
     precompile_unchanged_assets: true
-	
