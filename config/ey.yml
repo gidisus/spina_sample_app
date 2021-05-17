@@ -155,7 +155,9 @@ defaults:
   # You may safely set this to true if you aren't using a common database.
   #
   #ignore_database_adapter_warning: false
-
+  pool_size: 10
+  
+  min_pool_size: 6
   # You can add custom keys that will be available in your deploy hooks.
   # Custom keys will be available using config.key or config[:key]
   #
