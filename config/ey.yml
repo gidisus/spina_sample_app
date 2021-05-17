@@ -172,7 +172,6 @@ defaults:
 #
 environments:
 
-  # These options will only apply to the EXAMPLE_ENVIRONMENT environment.
-  #EXAMPLE_ENVIRONMENT:
-    #precompile_unchanged_assets: true
-
+  spina_local:
+    precompile_unchanged_assets: true
+	
