@@ -7,7 +7,7 @@ namespace :db do
   task :dump => :environment do
     cmd = nil
     with_config do |app, host, db, user, pass|
-      cmd = "DISABLE_DATABASE_ENVIRONMENT_CHECK=1 && PGPASSWORD=\"#{pass}\" pg_dump --host #{host} --username #{user} --no-password --verbose --clean --no-owner --no-acl --format=c #{db} > #{Rails.root}/db/#{app}.dump"
+      cmd = "DISABLE_DATABASE_ENVIRONMENT_CHECK=1 PGPASSWORD=\"#{pass}\" pg_dump --host #{host} --username #{user} --no-password --verbose --clean --no-owner --no-acl --format=c #{db} > #{Rails.root}/db/#{app}.dump"
     end
     exec cmd
   end
